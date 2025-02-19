@@ -6,4 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+ <ItemGroup>
+    <ProjectReference Include="..\..\infrastructure\DDDProject.Persistence\DDDProject.Persistence.csproj" />
+  </ItemGroup>
 </Project>
