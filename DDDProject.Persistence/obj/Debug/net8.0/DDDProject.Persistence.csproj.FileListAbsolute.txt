@@ -1,0 +1,17 @@
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.AssemblyInfoInputs.cache
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.AssemblyInfo.cs
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.csproj.CoreCompileInputs.cache
+D:\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.deps.json
+D:\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.runtimeconfig.json
+D:\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.dll
+D:\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.pdb
+D:\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Domain.dll
+D:\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Domain.pdb
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.csproj.AssemblyReference.cache
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProje.A0A24CAC.Up2Date
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.dll
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\refint\DDDProject.Persistence.dll
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.pdb
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.genruntimeconfig.cache
+D:\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\ref\DDDProject.Persistence.dll
