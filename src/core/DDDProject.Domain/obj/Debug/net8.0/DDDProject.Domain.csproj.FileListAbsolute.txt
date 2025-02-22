@@ -1,0 +1,12 @@
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\bin\Debug\net8.0\DDDProject.Domain.deps.json
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\bin\Debug\net8.0\DDDProject.Domain.dll
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\bin\Debug\net8.0\DDDProject.Domain.pdb
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.AssemblyInfo.cs
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.sourcelink.json
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.dll
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\refint\DDDProject.Domain.dll
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.pdb
+C:\Users\hp\DDDProject\src\core\DDDProject.Domain\obj\Debug\net8.0\ref\DDDProject.Domain.dll
