@@ -1,0 +1,11 @@
+D:\DDDProject\DDDProject.API\bin\Debug\net8.0\DDDProject.API.deps.json
+D:\DDDProject\DDDProject.API\bin\Debug\net8.0\DDDProject.API.dll
+D:\DDDProject\DDDProject.API\bin\Debug\net8.0\DDDProject.API.pdb
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\DDDProject.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\DDDProject.API.AssemblyInfoInputs.cache
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\DDDProject.API.AssemblyInfo.cs
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\DDDProject.API.csproj.CoreCompileInputs.cache
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\DDDProject.API.dll
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\refint\DDDProject.API.dll
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\DDDProject.API.pdb
+D:\DDDProject\DDDProject.API\obj\Debug\net8.0\ref\DDDProject.API.dll
