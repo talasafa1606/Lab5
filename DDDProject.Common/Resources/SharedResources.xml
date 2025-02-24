@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="StartingGradeRecalculation" xml:space="preserve">
+    <value>Début du recalcul des moyennes des étudiants</value>
+  </data>
+    <data name="CompletedGradeRecalculation" xml:space="preserve">
+    <value>Recalcul des moyennes terminé avec succès</value>
+  </data>
+    <data name="ErrorDuringGradeRecalculation" xml:space="preserve">
+    <value>Erreur lors du recalcul des moyennes</value>
+  </data>
+    <data name="StartingEnrollmentNotifications" xml:space="preserve">
+    <value>Début de l'envoi des notifications d'inscription</value>
+  </data>
+    <data name="CompletedEnrollmentNotifications" xml:space="preserve">
+    <value>Envoi des notifications d'inscription terminé</value>
+  </data>
+    <data name="ErrorDuringEnrollmentNotifications" xml:space="preserve">
+    <value>Erreur lors de l'envoi des notifications d'inscription</value>
+  </data>
+</root>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="StartingGradeRecalculation" xml:space="preserve">
+    <value>Starting student grade recalculation</value>
+  </data>
+    <data name="CompletedGradeRecalculation" xml:space="preserve">
+    <value>Grade recalculation completed successfully</value>
+  </data>
+    <data name="ErrorDuringGradeRecalculation" xml:space="preserve">
+    <value>Error occurred during grade recalculation</value>
+  </data>
+    <data name="StartingEnrollmentNotifications" xml:space="preserve">
+    <value>Starting enrollment deadline notifications</value>
+  </data>
+    <data name="CompletedEnrollmentNotifications" xml:space="preserve">
+    <value>Enrollment notifications sent successfully</value>
+  </data>
+    <data name="ErrorDuringEnrollmentNotifications" xml:space="preserve">
+    <value>Error occurred while sending enrollment notifications</value>
+  </data>
+</root>

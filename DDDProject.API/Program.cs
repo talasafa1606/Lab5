@@ -1,21 +1,28 @@
-﻿using DDDProject.Infrastructure;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Versioning;
-using Microsoft.AspNetCore.OData;
-using Microsoft.Extensions.DependencyInjection;
+﻿using DDDProject.Application.BackgroundJobs;
+using DDDProject.Common;
+using DDDProject.Common.Localization;
+using DDDProject.Infrastructure;
+using DDDProject.Infrastructure.BackgroundJobs;
 using DDDProject.Infrastructure.Caching;
+using DDDProject.Infrastructure.Configurations;
+using Hangfire;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
-using StackExchange.Redis;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData;
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
+
+namespace DDDProject.API;
+
 public class Program
 {
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Services.AddCommonServices();
         builder.Services.AddInfrastructureServices();
 
         builder.Services.AddApiVersioning(options =>
@@ -43,6 +50,14 @@ public class Program
         builder.Services.AddControllers()
             .AddOData(options => options.Select().Filter().OrderBy().Count().Expand());
 
+        
+        builder.Services.ConfigureHangfire(builder.Configuration);
+
+        builder.Services.AddSharedLocalization();
+
+        builder.Services.AddScoped<StudentGradeRecalculationJob>();
+        builder.Services.AddScoped<EnrollmentNotificationJob>();
+
         var app = builder.Build();
 
         app.UseRouting();
@@ -61,12 +76,22 @@ public class Program
                 cachedData = DateTime.UtcNow.ToString();
                 await cache.SetStringAsync(cacheKey, cachedData, new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10) // Cache for 10 minutes
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(30) 
                 });
             }
 
             return Results.Json(new { message = "Distributed Cache", time = cachedData });
         });
+        
+        var supportedCultures = new[] { "en-US", "de-DE", "fr-FR" };
+        app.UseRequestLocalization(new RequestLocalizationOptions()
+            .SetDefaultCulture(supportedCultures[0])
+            .AddSupportedCultures(supportedCultures)
+            .AddSupportedUICultures(supportedCultures));
+
+        app.UseHangfireDashboard("/hangfire");
+
+        HangfireJobScheduler.ScheduleRecurringJobs();
         app.Run();
     }
 }

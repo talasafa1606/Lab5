@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Hangfire" Version="1.8.18" />
       <PackageReference Include="MediatR" Version="12.4.1" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
@@ -15,6 +16,7 @@
     </ItemGroup>
     
     <ItemGroup>
+        <ProjectReference Include="..\DDDProject.Common\DDDProject.Common.csproj" />
         <ProjectReference Include="..\DDDProject.Domain\DDDProject.Domain.csproj" />
         <ProjectReference Include="..\DDDProject.Infrastructure\DDDProject.Infrastructure.csproj" />
         <ProjectReference Include="..\DDDProject.Persistence\DDDProject.Persistence.csproj" />

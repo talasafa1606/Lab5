@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="StartingGradeRecalculation" xml:space="preserve">
+    <value>Starte Neuberechnung der Studentennoten</value>
+  </data>
+    <data name="CompletedGradeRecalculation" xml:space="preserve">
+    <value>Notenberechnung erfolgreich abgeschlossen</value>
+  </data>
+    <data name="ErrorDuringGradeRecalculation" xml:space="preserve">
+    <value>Fehler bei der Notenberechnung aufgetreten</value>
+  </data>
+    <data name="StartingEnrollmentNotifications" xml:space="preserve">
+    <value>Starte Versand der Einschreibungsbenachrichtigungen</value>
+  </data>
+    <data name="CompletedEnrollmentNotifications" xml:space="preserve">
+    <value>Einschreibungsbenachrichtigungen erfolgreich versendet</value>
+  </data>
+    <data name="ErrorDuringEnrollmentNotifications" xml:space="preserve">
+    <value>Fehler beim Versand der Einschreibungsbenachrichtigungen</value>
+  </data>
+</root>
