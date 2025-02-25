@@ -1,4 +1,5 @@
-﻿using DDDProject.Application.BackgroundJobs;
+﻿using System.Reflection;
+using DDDProject.Application.BackgroundJobs;
 using DDDProject.Common;
 using DDDProject.Common.Localization;
 using DDDProject.Infrastructure;
@@ -6,12 +7,10 @@ using DDDProject.Infrastructure.BackgroundJobs;
 using DDDProject.Infrastructure.Caching;
 using DDDProject.Infrastructure.Configurations;
 using Hangfire;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
 
 namespace DDDProject.API;
@@ -21,6 +20,9 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
+        builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
         builder.Services.AddCommonServices();
         builder.Services.AddInfrastructureServices();
@@ -38,7 +40,7 @@ public class Program
             options.Configuration = builder.Configuration["Redis:ConnectionString"];
             options.InstanceName = "MyAppRedisCache";
         });
-        builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
+        builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("host.docker.internal:6379,abortConnect=false"));
         builder.Services.AddScoped<IRedisCachingService, RedisCacheService>();
 
         builder.Services.AddVersionedApiExplorer(options =>
@@ -59,6 +61,16 @@ public class Program
         builder.Services.AddScoped<EnrollmentNotificationJob>();
 
         var app = builder.Build();
+
+        if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) 
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "DDDProject API V1");
+                c.RoutePrefix = string.Empty; 
+            });
+        }
 
         app.UseRouting();
         app.UseAuthorization();

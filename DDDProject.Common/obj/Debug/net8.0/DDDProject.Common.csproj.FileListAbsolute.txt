@@ -9,3 +9,16 @@ D:\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.dll
 D:\DDDProject\DDDProject.Common\obj\Debug\net8.0\refint\DDDProject.Common.dll
 D:\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.pdb
 D:\DDDProject\DDDProject.Common\obj\Debug\net8.0\ref\DDDProject.Common.dll
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\bin\Debug\net8.0\DDDProject.Common.deps.json
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\bin\Debug\net8.0\DDDProject.Common.dll
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\bin\Debug\net8.0\DDDProject.Common.pdb
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.AssemblyInfo.cs
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.sourcelink.json
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.dll
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\refint\DDDProject.Common.dll
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\DDDProject.Common.pdb
+C:\Users\hp\Desktop\Inmind Academy\DDDProject\DDDProject.Common\obj\Debug\net8.0\ref\DDDProject.Common.dll

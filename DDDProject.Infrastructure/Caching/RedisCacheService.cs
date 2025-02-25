@@ -12,7 +12,7 @@ namespace DDDProject.Infrastructure.Caching
 
         public RedisCacheService()
         {
-            var redis = ConnectionMultiplexer.Connect("localhost:6379");
+            var redis = ConnectionMultiplexer.Connect("host.docker.internal:6379,abortConnect=false");
             _cacheDb = redis.GetDatabase();
         }
 

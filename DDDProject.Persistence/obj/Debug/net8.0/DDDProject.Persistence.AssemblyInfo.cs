@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DDDProject.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dd3235033acd7848b4ee9a2d99338482b3d67ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4620a36a906cc6b4e936c1784cc50dea5b7a3f1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DDDProject.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DDDProject.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
